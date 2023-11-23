@@ -29,6 +29,9 @@ h5, h6, li {
 
 a, td, p, button, span {
   font-family: "Roboto";
+}
+
+a {
   text-decoration: none;
 }
 
@@ -76,6 +79,11 @@ img {
   text-transform: uppercase;
 }
 
+.top-menu-trending-news ul li:first-child::after {
+  content: ":";
+  margin-right: 0.5rem;
+}
+
 .top-menu-trending-news ul li:not(:first-child):not(:last-child)::after {
   content: "-";
   margin-left: 0.5rem;
@@ -89,14 +97,10 @@ img {
 .top-menu-islands ul li {
   font-size: 0.8rem;
   font-family: "Roboto";
-}
-
-.top-menu-islands ul li {
   text-transform: uppercase;
 }
 
 .top-menu-islands ul li:not(:last-child):after {
-  color: hsl(0, 0%, 67%);
   content: "|";
   margin-left: 0.5rem;
 }
@@ -147,7 +151,7 @@ img {
 }
 
 .main-header-access-login button span {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .main-header-access-login button svg {
@@ -216,6 +220,7 @@ img {
 .row{
   display: flex;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .row > *{
@@ -240,7 +245,6 @@ img {
   display: flex;
   flex-direction: column;  
   gap: 0.5rem;
-  margin-bottom: 2rem;
 }
 
 .news.inline {
@@ -272,13 +276,6 @@ img {
   line-height: 1.25em;
 }
 
-.news-author span {
-  color: hsl(0, 0%, 33%);
-  font-size: 0.9rem;
-  text-transform: capitalize;
-  font-weight: 600;
-}
-
 .news-subtitle span {
   color: hsl(0, 0%, 33%);
   font-size: 0.9rem;
@@ -289,3 +286,13 @@ img {
 .news-subtitle.highlight span {
   color: hsl(0, 100%, 40%);
 }
+
+.news-author span {
+  color: hsl(0, 0%, 33%);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+
+
